@@ -1,0 +1,129 @@
+% This package is for charsets (default)
+\usepackage[utf8]{inputenc}
+
+% The principal package in the AMS-LATEX distribution. It adapts for use in LATEX most of the mathematical features found in AMS-TEX; it is highly recommended as an adjunct to serious mathematical typesetting in LATEX. (https://ctan.org/pkg/amsmath?lang=en)
+\usepackage{amsmath}
+\usepackage{mathdots}
+
+% better absolute brackets
+\usepackage{mathtools}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+
+% Swap the definition of \abs* and \norm*, so that \abs
+% and \norm resizes the size of the brackets, and the 
+% starred version does not.
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+%
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+
+% Algorithm2e is an environment for writing algorithms. (https://ctan.org/pkg/algorithm2e?lang=en)
+\usepackage{algorithm2e}
+
+ % The package builds upon the graphics package, providing a key-value interface for optional arguments to the \includegraphics command. This interface provides facilities that go far beyond what the graphics package offers on its own. (https://ctan.org/pkg/graphicx?lang=en)
+\usepackage{graphicx}
+
+% This package is for font and sizing the captions on figures and tables.
+\usepackage[labelfont=bf,font={footnotesize,singlespacing}]{caption}
+
+% A LATEX2ε package to help change the style of any or all of LATEX's sectional headers in the article, book, or report classes. Examples include the addition of rules above or below a section title. (https://ctan.org/pkg/sectsty?lang=en)
+\usepackage{sectsty}
+% \subsectionfont{\small}
+
+% The xr package is used for cross-referencing across multiple independent documents. For example, you would use the xr package if you had two separate files in a project, File1.tex and File2.tex, and you would like to have a reference in File1.tex to something labelled in File2.tex, without including File2.tex in File1.tex. (https://www.overleaf.com/learn/how-to/Cross_referencing_with_the_xr_package_in_Overleaf)
+\usepackage{xr}
+
+% The hyperref package is used to handle cross-referencing commands in LATEX to produce hypertext links in the document. (https://ctan.org/pkg/hyperref?lang=en)
+\usepackage{hyperref}
+
+% The package enhances LATEX’s cross-referencing features, allowing the format of references to be determined automatically according to the type of reference. (https://ctan.org/pkg/cleveref?lang=en)
+\usepackage{cleveref}
+
+% Package to show and highlight code
+\usepackage{listings}
+
+% Allow Multicolumn sections
+\usepackage{blindtext} % for adding some random text data in sections
+\usepackage{multicol} % for making multi column layouts
+
+% To make sure that Latex doesn't reposition tables
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+% \restylefloat{figure}
+
+\usepackage[section]{placeins}
+
+% all figure file names relative to this path
+%\graphicspath{ {../Figures/} } %NOT REALLY NEEDED IF YOU JUST DIRECT LINK INSTEAD OF RELATIONAL LINK
+
+%allow right aligned columns
+\usepackage{array,booktabs,ragged2e}
+\newcolumntype{R}[1]{>{\RaggedLeft\arraybackslash}p{#1}}
+
+%colour table rows
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+
+%%% HELPER CODE FOR DEALING WITH EXTERNAL REFERENCES
+\makeatletter
+\newcommand*{\addFileDependency}[1]{
+  \typeout{(#1)}
+  \@addtofilelist{#1}
+  \IfFileExists{#1}{}{\typeout{No file #1.}}
+}
+\makeatother
+
+\newcommand*{\myexternaldocument}[1]{
+    \externaldocument{#1}
+    \addFileDependency{#1.tex}
+    \addFileDependency{#1.aux}
+}
+
+%%% END HELPER CODE
+
+% Page numbering
+\usepackage{fancyhdr} % to change header and footers
+
+% Redefine plain style, which is used for titlepage and chapter beginnings
+% From https://tex.stackexchange.com/a/30230/828
+\fancypagestyle{plain}{%
+    \renewcommand{\headrulewidth}{0pt}%
+    \fancyhf{}%
+    % \fancyfoot[R]{\thepage}%
+}
+
+\fancypagestyle{noNumber}{%
+    \renewcommand{\headrulewidth}{0pt}%
+    \fancyhf{}%
+    \pagenumbering{alph}
+    % \fancyfoot[R]{\thepage}%
+}
+
+\fancypagestyle{fancyRoman}{%
+    \renewcommand{\headrulewidth}{0pt}%
+    \renewcommand{\footrulewidth}{1pt}%
+    \fancyhf{}%
+    \fancyfoot[R]{\thepage}%
+    \pagenumbering{roman}
+}
+
+\fancypagestyle{fancyArabic}{%
+    \renewcommand{\headrulewidth}{0pt}%
+    \renewcommand{\footrulewidth}{1pt}%
+    \fancyhf{}%
+    \fancyfoot[R]{\thepage}%
+    \pagenumbering{arabic}
+}
+
+% Alternating margins support
+\usepackage[letterpaper,inner=1in,outer=1in,top=1in,bottom=1in]{geometry}
+
+%% MY COMMANDS
+\newcommand{\high}[1]{\text{\raisebox{0.6ex}{$#1$}}}
+\newcommand{\higher}[1]{\text{\raisebox{1.5ex}{$#1$}}}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
