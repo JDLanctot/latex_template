@@ -22,13 +22,25 @@ To use this template, you will need a LaTex distribution installed on your compu
 
 The main file of the template is `main.tex`, which includes the `0-header.tex` file which imports all the necessary packages and commands. The structure is designed to allow subsections to be commented out from the `main.tex` to not render them to the compiled document. You can modify the content of the sections and subsections to match your writing needs. All of the files start with a number, or letter in the case of the preface content, to indicate the compiling sequence of the `main.tex` right from the folder structure.
 
-#### Sections and Subsections
+#### Splitting and Compiling Files
 
-The document structure is organized using sections and subsections. Each section and subsection has a corresponding file in the `sections` folder. To add a new section or subsection, simply create a new `.tex` file in the `sections` folder and add it to the `main.tex` file using the `\input{sections/<filename>}` command.
+The document structure is organized using sections to be drawn into the `main.tex` to keep organized. Each section has a corresponding file in the `sections` folder. To add a new section or subsection, simply create a new `.tex` file in the `sections` folder and add it to the `main.tex` file using the `\input{sections/<filename>}` command.
+
+#### Document Structure
+
+LaTeX documents are structured into sections, subsections, and chapters. The document class specifies the overall style and layout of the document. The `\section{}` command creates a new section, with automatic numbering and table of contents entry. The `\subsection{}` command creates a subsection, and so on for lower levels. Use the appropriate heading styles to create a clear hierarchy of sections and subsections. The page layout can be customized using the geometry package.
+
+#### Text Formatting
+
+LaTeX provides commands for formatting text, such as `\textbf{}` for bold, `\textit{}` for italic, `\underline{}` for underline, and `\fontsize{}{}` for changing the font size. Use these commands to create well-formatted and visually appealing documents. The font style and size can be set using the document class or the fontspec package. Avoid using manual formatting commands like `\vspace{}` and `\hspace{}` to create space between paragraphs and lines, use proper LaTeX environments instead. You can even use negative numbers in these commands to remove space.
+
+#### Equations and Mathematical Notation
+
+LaTeX is particularly well-suited for typesetting equations and mathematical notation. Use the `\begin{equation}` `\end{equation}` environment to create a numbered equation. Use the `\begin{align}` `\end{align}` environment to create a set of aligned equations, with one number for the entire set. Use the appropriate commands for mathematical symbols and operators, such as `\frac{}{}` for fractions, `\sqrt{}` for square roots, and `\int` for integrals. Use the `_` followed by a character of your choice to add subscripts and the `^` to add superscripts followed by a character of your choice. If you would like more than one character to be superscript or subscript, include them in `{}` directly after the `_` or `^`. Note that you can even use both of these modifiers, one after each other, if you need both a superscript and subscript on something. Use the amsmath package for additional mathematical commands and environments (already included in the `0-header.tex`).
 
 #### Figures and Tables
 
-Figures and tables can be easily added to the document using the `\includegraphics{<filename>}` and `\begin{table}` commands, respectively. You can also add captions to your figures and tables using the `\caption{<caption>}` command. Some examples are left in the document to guide you in filling out the required information.
+LaTeX provides powerful tools for including figures and tables in documents. Figures and tables can be easily added to the document using the `\includegraphics{<filename>}` and `\begin{table}` commands, respectively. You can also add captions to your figures and tables using the `\caption{<caption>}` command and use the `\label{}` command to give the table a label which is used in the generation of the list of tables section in the preface. You can also use the \includegraphics[]{} command to insert an image file and apply the label and caption to these as well. Some examples are left in the document to guide you in filling out the required information.
 
 #### References
 
