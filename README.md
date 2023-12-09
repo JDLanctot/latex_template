@@ -2,6 +2,22 @@
 
 This LaTex template is designed to speed up scientific writing by structuring the content in a similar file structure as HTML website design. This makes it easier to organize your writing and quickly navigate through your document.
 
+- [[#Features|Features]]
+- [[#Getting Started|Getting Started]]
+	- [[#Getting Started#Prerequisites|Prerequisites]]
+	- [[#Getting Started#Usage|Usage]]
+		- [[#Usage#Splitting and Compiling Files|Splitting and Compiling Files]]
+		- [[#Usage#Document Structure|Document Structure]]
+		- [[#Usage#Text Formatting|Text Formatting]]
+		- [[#Usage#Equations and Mathematical Notation|Equations and Mathematical Notation]]
+		- [[#Usage#Figures and Tables|Figures and Tables]]
+		- [[#Usage#References|References]]
+	- [[#Getting Started#Customization|Customization]]
+- [[#Academic Resouces|Academic Resouces]]
+	- [[#Academic Resouces#My Dotfiles|My Dotfiles]]
+	- [[#Academic Resouces#Scholarship Applications|Scholarship Applications]]
+- [[#Contributing|Contributing]]
+- [[#License|License]]
 ## Features
 
 - Structured content using nested sections and subsections
@@ -50,10 +66,19 @@ The references is automatically generated using BibTeX. You can add your referen
 
 The `hightlight.sty` file allows for assigning colors to table values based on how large the values are relative to a minimum and maximum value -- thereby giving a gradient which allows for added vizualization of the table contents. All of the additional styling can be found in the `nature.tex` file which makes seeks to style things like Nature publications. The majority of this file was created and shared on the internet by Peter Czoschke, in 2004.
 
+## Academic Resources
+Other GitHub repos to help you with Academic Success.
+
+### My Dotfiles
+Visit My Dotfiles repo for instructions and code to setup a Windows Computer for doing Scientific Research Coding: [My Dotfiles](https://github.com/JDLanctot/dotfiles).
+
+### Scholarship Applications
+Visit my Scholarship Applications repo for instructions templates for applying to Graduate Level Scholarships, such as NSERC: [Scholarship Applications](https://github.com/JDLanctot/Scholarship-Applications)
+
 ## Contributing
 
 If you have any suggestions or improvements for this template, feel free to open an issue or submit a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
