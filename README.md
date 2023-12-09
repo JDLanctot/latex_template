@@ -2,22 +2,24 @@
 
 This LaTex template is designed to speed up scientific writing by structuring the content in a similar file structure as HTML website design. This makes it easier to organize your writing and quickly navigate through your document.
 
-- [[#Features|Features]]
-- [[#Getting Started|Getting Started]]
-	- [[#Getting Started#Prerequisites|Prerequisites]]
-	- [[#Getting Started#Usage|Usage]]
-		- [[#Usage#Splitting and Compiling Files|Splitting and Compiling Files]]
-		- [[#Usage#Document Structure|Document Structure]]
-		- [[#Usage#Text Formatting|Text Formatting]]
-		- [[#Usage#Equations and Mathematical Notation|Equations and Mathematical Notation]]
-		- [[#Usage#Figures and Tables|Figures and Tables]]
-		- [[#Usage#References|References]]
-	- [[#Getting Started#Customization|Customization]]
-- [[#Academic Resouces|Academic Resouces]]
-	- [[#Academic Resouces#My Dotfiles|My Dotfiles]]
-	- [[#Academic Resouces#Scholarship Applications|Scholarship Applications]]
-- [[#Contributing|Contributing]]
-- [[#License|License]]
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+	- [Prerequisites](#prerequisites)
+	- [Usage](#usage)
+		- [Splitting and Compiling Files](#splitting-and-compiling-files)
+		- [Document Structure](#document-structure)
+		- [Text Formatting](#text-formatting)
+		- [Equations and Mathematical Notation](#equations-and-mathematical-notation)
+		- [Figures and Tables](#figures-and-tables)
+		- [References](#references)
+	- [Customization](#customization)
+- [Academic Resources](#academic-resources)
+	- [My Dotfiles](#my-dotfiles)
+	- [Scholarship Applications](#scholarship-applications)
+- [Contributing](#contributing)
+- [License](#license)
 ## Features
 
 - Structured content using nested sections and subsections
