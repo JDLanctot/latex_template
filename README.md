@@ -1,5 +1,3 @@
-# LaTex Scientific Writing Template
-
 This LaTex template is designed to speed up scientific writing by structuring the content in a similar file structure as HTML website design. This makes it easier to organize your writing and quickly navigate through your document.
 
 ## Table of Contents
@@ -18,8 +16,10 @@ This LaTex template is designed to speed up scientific writing by structuring th
 - [Academic Resources](#academic-resources)
 	- [My Dotfiles](#my-dotfiles)
 	- [Scholarship Applications](#scholarship-applications)
+	- [Portfolio Website](#portfolio-website)
 - [Contributing](#contributing)
 - [License](#license)
+
 ## Features
 
 - Structured content using nested sections and subsections
@@ -72,10 +72,13 @@ The `hightlight.sty` file allows for assigning colors to table values based on h
 Other GitHub repos to help you with Academic Success.
 
 ### My Dotfiles
-Visit My Dotfiles repo for instructions and code to setup a Windows Computer for doing Scientific Research Coding: [My Dotfiles](https://github.com/JDLanctot/dotfiles).
+Visit My Dotfiles repo for instructions and code to setup a Windows Computer for doing Scientific Research Coding: [My Dotfiles](https://github.com/JDLanctot/dotfiles). [[My Dotfiles]]
 
 ### Scholarship Applications
-Visit my Scholarship Applications repo for instructions templates for applying to Graduate Level Scholarships, such as NSERC: [Scholarship Applications](https://github.com/JDLanctot/Scholarship-Applications)
+Visit my Scholarship Applications repo for instructions templates for applying to Graduate Level Scholarships, such as NSERC: [Scholarship Applications](https://github.com/JDLanctot/Scholarship-Applications). [[Scholarship Applications]]
+
+### Portfolio Website
+Visit Portfolio Website repo for instructions and code to an easy Portfolio Website and host it for FREE using GitHub: [Portfolio Website](https://github.com/JDLanctot/jdlanctot.github.io)). [[J.D.Lanctot's Portfolio]]
 
 ## Contributing
 
@@ -83,4 +86,5 @@ If you have any suggestions or improvements for this template, feel free to open
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details. [[LICENSE]]
+
