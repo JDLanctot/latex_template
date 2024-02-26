@@ -172,5 +172,5 @@
 
 % Colour Grade Tables with highlight.sty
 \usepackage{hhline} % used for the top-most horizontal line! in order to fix the top left corner cell empty
-\usepackage{highlight}
-\renewcommand{\opacity}{50}
+% \usepackage{highlight}
+% \renewcommand{\opacity}{50}
