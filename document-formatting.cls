@@ -1,6 +1,8 @@
 %% Class nature
 %% Written by Peter Czoschke, czoschke@mrl.uiuc.edu
 %% v1.0 24 Feb. 2004
+%% Extended by Jordan Lanctot, jordan.lanctot@torontomu.ca
+%% v2.0 17 Mar. 2024
 %%
 %% A document class for Nature letters and articles that (should)
 %% conform to the Nature preprint style as defined by their Word template.
