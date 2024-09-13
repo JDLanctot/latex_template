@@ -45,6 +45,12 @@
 \RequirePackage{fullpage}
 \RequirePackage{ifthen}
 
+%% make labels in bibliobraphy be #.
+\renewcommand\@biblabel[1]{#1.}
+
+%% make citations be superscripts, taken from citesupernumber.sty
+\def\@cite#1#2{$^{\mbox{\scriptsize #1\if@tempswa , #2\fi}}$}
+
 %% Some style parameters
 \setlength{\parindent}{0.39in}
 \setlength{\parskip}{18pt}
@@ -99,24 +105,27 @@
     }{\par\vspace{-6pt}}
 
 %% Redefine the \section command.
-\renewcommand{\section}{\@startsection {section}{1}{0pt}%
-    {-6pt}{1pt}%
-    {\bfseries}%
-    }
-\renewcommand{\subsection}{\@startsection {subsection}{2}{0pt}%
-    {-2em}{-2.5em}%
-    {\bfseries}*%
-    }
-\renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{0pt}%
-    {-2em}{-2.5em}%
-    {\bfseries}*%
-    }
+% \renewcommand{\section}{\@startsection {section}{1}{0pt}%
+%     {-6pt}{1pt}%
+%     {\bfseries}%
+%     }
+% \renewcommand{\subsection}{\@startsection {subsection}{2}{0pt}%
+%     {-2em}{-2.5em}%
+%     {\bfseries}*%
+%     }
+% \renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{0pt}%
+%     {-2em}{-2.5em}%
+%     {\bfseries}*%
+%     }
 
 %% Define the methods environment.  Use \subsection to separate.
-\newenvironment{methods}{%
-    \section*{Methods}%
-    \setlength{\parskip}{12pt}%
+\newenvironment{outline-of-proposed-research}{%
+    \pagestyle{fancyArabic}
+    % \addcontentsline{toc}{section}{Outline of Proposed Research}
+    \section*{Outline of Proposed Research}
+    \setlength{\parindent}{0in}%
     }{}
+    
 
 %% No heading for References section, but eat up the extra space from \section command
 \renewcommand\refname{\vspace{-48pt}\setlength{\parskip}{12pt}}
