@@ -32,7 +32,9 @@
 
 % A LATEX2ε package to help change the style of any or all of LATEX's sectional headers in the article, book, or report classes. Examples include the addition of rules above or below a section title. (https://ctan.org/pkg/sectsty?lang=en)
 \usepackage{sectsty}
-% \subsectionfont{\small}
+\sectionfont{\vspace{-0.0em}\large\bfseries\addvspace{-1.5em}}
+\subsectionfont{\vspace{-0.0em}\normalsize\bfseries\addvspace{-1em}}
+\subsubsectionfont{\vspace{-0.0em}\normalsize\bfseries\addvspace{-1em}}
 
 % The xr package is used for cross-referencing across multiple independent documents. For example, you would use the xr package if you had two separate files in a project, File1.tex and File2.tex, and you would like to have a reference in File1.tex to something labelled in File2.tex, without including File2.tex in File1.tex. (https://www.overleaf.com/learn/how-to/Cross_referencing_with_the_xr_package_in_Overleaf)
 \usepackage{xr}
@@ -63,6 +65,7 @@
 \restylefloat{table}
 % \restylefloat{figure}
 
+\usepackage{afterpage}
 \usepackage[section]{placeins}
 
 % all figure file names relative to this path
